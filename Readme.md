@@ -1,27 +1,28 @@
 # Basic Token Swap Contract
 
 ## 1. Project Title
-**Basic Token Swap on Stacks Blockchain**
+**Basic Token Swap (Clarity Smart Contract)**
 
 ## 2. Project Description
-This Clarity smart contract enables users to swap between two predefined SIP-010 fungible tokens at a fixed exchange rate.  
-It contains only two functions:
-- `swap-a-for-b`: Swap Token A for Token B
-- `swap-b-for-a`: Swap Token B for Token A  
+This is a simple Clarity smart contract that allows users to swap between two fungible tokens (Token A and Token B) on the Stacks blockchain.  
+The contract supports a **1:1 swap ratio** for simplicity, making it easy to exchange tokens without external price oracles.
 
-The contract ensures that both token transfers occur atomically — either both succeed or neither does.
+The project is minimal and includes only **two core functions**:
+- `swap-token-a-for-token-b`
+- `swap-token-b-for-token-a`
 
 ## 3. Project Vision
-The vision of this project is to provide a simple, minimal, and error-free token swap mechanism for the Stacks blockchain.  
-By keeping the logic straightforward, it allows developers to quickly integrate basic token swaps into their decentralized applications.
+Our vision is to create a foundation for **decentralized token swaps** on the Stacks blockchain that can be expanded into a more advanced decentralized exchange (DEX).  
+This contract serves as a starting point for developers to integrate token swaps into their projects.
 
 ## 4. Future Scope
-- Implement dynamic exchange rates based on market data.
-- Integrate with decentralized liquidity pools.
-- Add swap fees and fee distribution to liquidity providers.
-- Allow admin to update token addresses and rates.
-- Support multiple token pairs in one contract.
+- Integrate with price oracles for dynamic swap rates.
+- Support multiple token pairs.
+- Add transaction fees for liquidity providers.
+- Implement liquidity pools and automated market making (AMM).
+- Add safety checks for liquidity balance before swaps.
 
 ## 5. Contract Address
-`SP000000000000000000002Q6VF78.basic-token-swap`  
-*(Replace with your deployed contract address after deployment)*
+`SP1234567890ABCDEFGHJKL.basic-token-swap`
+
+> **Note**: Replace this with the deployed contract address on the Stacks testnet or mainnet.
